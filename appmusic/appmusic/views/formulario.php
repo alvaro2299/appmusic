@@ -25,7 +25,7 @@
                     <div class="card-header">
                         Login
                     </div>
-                    <form id="product-form" name="" action="../controllers/login.php" method="POST" class="card-body">
+                    <form id="product-form" name="" action="controllers/login.php" method="POST" class="card-body">
                         <div class="form-group">
                             <input type="text" name="username" placeholder="username" class="form-control">
                         </div>

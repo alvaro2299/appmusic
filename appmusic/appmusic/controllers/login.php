@@ -10,7 +10,7 @@
     $conexion=conexion_correcta($db,$Email,$LastName);
     if (!($conexion==null)) {
        $_SESSION['conexion']=$Email;
-       header("location:menu.php");
+       header("location:../views/menu.php");
     }
     else {
         error_conexion();
