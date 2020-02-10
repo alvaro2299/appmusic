@@ -54,8 +54,9 @@ if (!isset($_POST) || empty($_POST)) {
 }
 else{
    //Login
-    require_once("models/credenciales.php");
-    require_once("views/views.php");
+    require_once("../models/credenciales.php");
+    require_once("../views/views.php");
+    
     $Email=$_POST['username'];
     $LastName=$_POST['password'];
     

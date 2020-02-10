@@ -1,7 +1,7 @@
 <?php
 
 
-function conexion_correcta(){
+function conexion_correcta($Email,$LastName){
 
     //username=email
     //clave=lastname
