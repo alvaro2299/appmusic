@@ -10,7 +10,11 @@
 </head>
 
 <?php
-
+  require_once("../db/conexion.php");
+    require_once("../models/credenciales.php");
+    require_once("../views/views.php");
+    session_start();
+    
 if (!isset($_POST) || empty($_POST)) { 
 ?>
 <body>
@@ -46,7 +50,7 @@ if (!isset($_POST) || empty($_POST)) {
 
         </div>
         <br>
-
+        
 
     </div>
 
@@ -54,16 +58,17 @@ if (!isset($_POST) || empty($_POST)) {
 }
 else{
    //Login
-    require_once("../models/credenciales.php");
-    require_once("../views/views.php");
-    
+
+    var_dump($_SESSION['conexion']);
     $Email=$_POST['username'];
     $LastName=$_POST['password'];
     
-    $conexion=conexion_correcta($Email,$LastName);
+    $conexion=conexion_correcta($db,$Email,$LastName);
 
-    if (mysqli_query($db,$conexion)) {
-        echo "por aqui";
+    if (!($conexion==null)) {
+       $_SESSION['conexion']=$Email;
+       var_dump($_SESSION['conexion']);
+       header("location:menu.php");
     }
     else {
         error_conexion();
