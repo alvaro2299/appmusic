@@ -24,7 +24,7 @@ if (!isset($_POST) || empty($_POST)) {
                     <div class="card-header">
                         Login
                     </div>
-                    <form id="product-form" name="" action="pe_login.php" method="POST" class="card-body">
+                    <form id="product-form" name="" action="login.php" method="POST" class="card-body">
                         <div class="form-group">
                             <input type="text" name="username" placeholder="username" class="form-control">
                         </div>
@@ -56,13 +56,13 @@ else{
    //Login
     require_once("models/credenciales.php");
     require_once("views/views.php");
-    $Email;
-    $LastName;
+    $Email=$_POST['username'];
+    $LastName=$_POST['password'];
     
-    $conexion=conexion_correcta();
+    $conexion=conexion_correcta($Email,$LastName);
 
     if (mysqli_query($db,$conexion)) {
-        
+        echo "por aqui";
     }
     else {
         error_conexion();
