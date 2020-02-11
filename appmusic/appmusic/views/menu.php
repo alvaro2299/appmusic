@@ -6,12 +6,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+        <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
 </head>
 <body>
-    <a href="../db/cerrar_sesion.php" class="btn btn-outline-info">Cerrar sesion</a>
+    <a href="downmusic.php" class="btn btn-outline-info ">Descargar Musica</a><br>
+    <br>
+    <a href="histfacturas.php" class="btn btn-outline-info">Consultar facturas</a><br>
+    <br>
+    <a href="/views/facturas.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
+    <br>
+    <a href="/views/histfacturas.php" class="btn btn-outline-info">Mas descargadas</a><br>
+    <br>
+    <a href="/views/ranking.php" class="btn btn-outline-info">ranking</a><br>
+    <br>
+    <a href="../db/cerrar_sesion.php" class="btn btn-outline-info">Cerrar sesion</a><br>
 </body>
 </html>
 <?php
 session_start();
-var_dump($_SESSION['conexion']);
+
 ?>
