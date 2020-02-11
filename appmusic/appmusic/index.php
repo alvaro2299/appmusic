@@ -6,7 +6,7 @@ require_once("db/conexion.php");
 
 <?php
 // Llamada al controlador
-//hola
+
 require_once("views/formulario.php");
 
 ?>
