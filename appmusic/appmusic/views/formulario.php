@@ -39,9 +39,7 @@
                     </form>
                 </div>
                 <br>
-                <div class="form-group">
-                           <a href='Registro de clientes.php'> <buttom  name="login" value="O inicia sesion" class="btn btn-outline-info btn-lg btn-block">Registro</buttom></a>
-                </div>
+                
 
             </div>
 

@@ -21,16 +21,12 @@
 
 
  ?>
- <div class="container ">
-        <!--Aplicacion-->
-        <div id="App" class="row pt-6">
-            <div class="col-md4-">
-                <div class="card">
+ <div class='table-responsive'>
                     <div class="card-header">
                         Mirar Historial facturas
                     </div>
                     
-                        <div class="form-group">
+                        
                        
                             <table class='table '>
                             
@@ -62,22 +58,13 @@
                             ?>
                             </table>
                         </div>
-
-                       
-
-                        
-                    
-                </div>
-                <br>
                 <div class="form-group">
                            <a href='menu.php' class='btn btn-outline-info'>Volver al menu</a>
                 </div>
 
-            </div>
+            
 
-        </div>
-        <br>
-    </div>
+      </div>
 </html>
 <?php
 }

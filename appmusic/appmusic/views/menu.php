@@ -13,9 +13,9 @@
     <br>
     <a href="histfacturas.php" class="btn btn-outline-info">Consultar facturas</a><br>
     <br>
-    <a href="/views/facturas.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
+    <a href="facturas.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
     <br>
-    <a href="/views/histfacturas.php" class="btn btn-outline-info">Mas descargadas</a><br>
+    <a href="ranking.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
     <br>
     <a href="/views/ranking.php" class="btn btn-outline-info">ranking</a><br>
     <br>

@@ -15,7 +15,7 @@
  <?php
  session_start();
  require_once("../controllers/comprobarcanciones.php");
-
+var_dump($_SESSION['descargas']);
 
  if (!isset($_POST) || empty($_POST)) {
 
