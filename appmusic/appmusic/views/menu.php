@@ -15,9 +15,7 @@
     <br>
     <a href="facturas.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
     <br>
-    <a href="ranking.php" class="btn btn-outline-info">Factura entre dos fechas</a><br>
-    <br>
-    <a href="/views/ranking.php" class="btn btn-outline-info">ranking</a><br>
+    <a href="ranking.php" class="btn btn-outline-info">Ranking</a><br>
     <br>
     <a href="../db/cerrar_sesion.php" class="btn btn-outline-info">Cerrar sesion</a><br>
 </body>

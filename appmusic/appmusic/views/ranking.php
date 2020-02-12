@@ -15,7 +15,7 @@
     <h1 class="text-center">Ver entre dos fechas</h1>
 
  <?php
- 
+ require_once("../controllers/ranking.php");
  if (!isset($_POST) || empty($_POST)) {
      
 
@@ -28,7 +28,7 @@
                     <div class="card-header">
                         
                     </div>
-                    <form id="product-form" name="" action="../controllers/facturafechas.php" method="POST" class="card-body">
+                    <form id="product-form" name="" action="../controllers/ranking.php" method="POST" class="card-body">
                         <div class="form-group">
                             <input type="date" name="fecha1"  class="form-control">
                         </div>
@@ -53,9 +53,9 @@
 <?php
 }
 else {
+    
        //select SUM(quantity) AS ordenado,name from track,invoiceline where track.trackid=invoiceline.trackid group by name order by  ordenado;
        ?>
-       
              <table class='table '>
                             
                             <tr>
@@ -66,12 +66,10 @@ else {
                             <?php
                             foreach ($datos as $dato) {
                                 echo "<tr>";
-                                    echo "<th scope='col' class='table-primary'>".$dato['Cantidad']."</th>";
-                                    echo "<th scope='col' class='table-secondary'>".$dato['Name']."</th>";
-                                   
+                                    echo "<th scope='col' class='table-primary'>".$dato['ordenado']."</th>";
+                                    echo "<th scope='col' class='table-secondary'>".$dato['name']."</th>";      
                                 echo "</tr>";
                             }
-                            
                             echo "</table>";
 }
 ?>
